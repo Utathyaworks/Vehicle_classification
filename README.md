@@ -1,4 +1,4 @@
-#  Efficient Vehicle Classification Using a Streamlined Pruned Deep Learning Model  
+# Efficient Vehicle Classification Using a Streamlined Pruned Deep Learning Model  
 **Accepted at RAIT 2025**
 
 > **Authors:** Aritra Mondal, Utathya Aich, Pawan Kumar Singh  
@@ -34,33 +34,27 @@ Vehicle classification plays a critical role in surveillance, traffic monitoring
 
 Our proposed two-phase deep learning framework is designed to maximize classification accuracy while minimizing computational overhead—ideal for real-world deployment in constrained environments.
 
+![Proposed Vehicle Detection Framework](images/proposed_framework.png)
+
 ### 🔁 Step-by-Step Architecture
 
-**1. Data Preprocessing**
-- Annotated bounding boxes are used to crop vehicle regions from raw images.
+**1. Data Preprocessing**  
+- Annotated bounding boxes are used to crop vehicle regions from raw images.  
 - This isolates relevant features, reducing background noise and improving model focus.
 
-![Preprocessing Example](images/preprocessing_example.png)
-
-**2. Feature Extraction with EfficientNetB3**
-- EfficientNetB3 pre-trained on ImageNet is used for vehicle classification.
+**2. Feature Extraction with EfficientNetB3**  
+- EfficientNetB3 pre-trained on ImageNet is used for vehicle classification.  
 - Leverages compound scaling to optimize depth, width, and resolution.
 
-**3. Dense Layer Optimization**
-- Includes:
-  - ReLU activations  
-  - L1 & L2 regularization  
-  - Batch normalization  
-  - Dropout (15–25%)
+**3. Dense Layer Optimization**  
+- Includes: ReLU activations, L1 & L2 regularization, Batch Normalization, Dropout (15–25%)
 
-**4. Pruning Strategy**
-- Magnitude-based structured pruning applied to dense layers.
+**4. Pruning Strategy**  
+- Magnitude-based structured pruning applied to dense layers.  
 - Sparsity increased from 30% to 80% over 2000 steps using TensorFlow PolynomialDecay.
 
-![Pruning Illustration](images/pruning.png)
-
-**5. Fine-Tuning & Evaluation**
-- Model retrained with optimal weights.
+**5. Fine-Tuning & Evaluation**  
+- Model retrained with optimal weights.  
 - Final metrics include accuracy and confusion matrix visualisations.
 
 ---
@@ -74,12 +68,12 @@ Our proposed two-phase deep learning framework is designed to maximize classific
 
 **Loss Curves:**
 
-![Loss PoribohonBD](images/loss_poribohonbd.png)
+![Loss PoribohonBD](images/loss_poribohonbd.png)  
 ![Loss JUIVCDv1](images/loss_juivcdv1.png)
 
 **Confusion Matrices:**
 
-![Confusion PoribohonBD](images/confusion_poribohonbd.png)
+![Confusion PoribohonBD](images/confusion_poribohonbd.png)  
 ![Confusion JUIVCDv1](images/confusion_juivcdv1.png)
 
 ---
