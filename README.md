@@ -83,9 +83,11 @@ Our proposed two-phase deep learning framework is designed to maximize classific
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{mondal2025efficient,
-  title={Efficient Vehicle Classification Using a Streamlined Pruned Deep Learning Model},
+@INPROCEEDINGS{11088911,
   author={Mondal, Aritra and Aich, Utathya and Singh, Pawan Kumar},
-  booktitle={Proceedings of the IEEE RAIT 2025},
-  year={2025}
+  booktitle={2025 6th International Conference on Recent Advances in Information Technology (RAIT)}, 
+  title={Efficient vehicle classification using a streamlined pruned deep learning model}, 
+  year={2025},
+  pages={1--6},
+  doi={10.1109/RAIT65068.2025.11088911}
 }
