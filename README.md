@@ -78,7 +78,7 @@ Our proposed two-phase deep learning framework is designed to maximize classific
 
 ---
 
-## 📚 Citation [To be updated later]
+## 📚 Citation
 
 If you use this work, please cite:
 
